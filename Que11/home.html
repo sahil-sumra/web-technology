@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .navul {
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0%;
+            padding: 0%;
+            background-color: white;
+        }
+
+        .navli {
+            float: left;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #bbb;
+            border-left: 1px solid #bbb;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            /* text-align: center; */
+            padding: 14px 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(248, 247, 247, 0.447);
+            /* min-width: 160px; */
+            border-radius: 30px;
+            width: auto;
+            margin: 0%;
+            padding-left: 40px;
+            padding-right: 0%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width: auto;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            font-family: arial;
+            background-color: #e8e8e8;
+        }
+
+        .card {
+            width: 190px;
+            height: 254px;
+            padding: 0.8em;
+            background: #f5f5f568;
+            position: relative;
+            overflow: visible;
+            border-radius: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            margin: 20px;
+        }
+
+        .card-img {
+            transition: 0.3s ease;
+            border-radius: 20px;
+            margin-left: 15px;
+        }
+
+        .card-info {
+            padding-top: 10%;
+        }
+
+        .text-title {
+            font-weight: 900;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .text-body {
+            font-size: 0.9em;
+            padding-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .card-img:hover {
+            transform: translateY(-25%);
+            box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px,
+                rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+        }
+
+        .dropcard {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul class="navul">
+                <li class="navli"><img style="margin-right: 20px; margin-left:20px; margin-top: 10px;"
+                        src="/img/inc-india-logo.svg" alt=""> </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Destinations</a>
+                    <div class="dropdown-content">
+                        <div>
+                            <div class="dropcard"><a href="page1.html">
+                                    <div class="card">
+                                        <div><img width="162px" class="card-img" src="/img/1.jpeg" alt=""></div>
+                                        <div class="card-info">
+                                            <p class="text-title">Popular Destinations</p>
+                                            <p class="text-body">Product description and details</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="dropcard"><a href="page2.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/2.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">Spiritual Destinations</p>
+                                                <p class="text-body">Product description and details</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page3.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/3.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">Heritage Destinations</p>
+                                                <p class="text-body">Product description and details</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page4.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/4.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">LAND OF BUDDHA</p>
+                                                <p class="text-body">Product description and details</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page5.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/5.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">States And Union Territories</p>
+                                                <p class="text-body">Product description and details</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page6.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/6.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">All Destinations</p>
+                                                <p class="text-body">Product description and details</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navli dropdown"><a href="javascript:void(0)" class="dropbtn">Experiences</a>
+                    <div class="dropdown-content">
+                        <div>
+                            <div class="dropcard"><a href="page7.html">
+                                    <div class="card">
+                                        <div><img width="162px" class="card-img" src="/img/heritage.jpeg" alt=""></div>
+                                        <div class="card-info">
+                                            <p class="text-title">Heritage</p>
+                                            <p class="text-body">Ancient history comes alive here</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="dropcard"><a href="page8.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/adventure.jpeg" alt="">
+                                            </div>
+                                            <div class="card-info">
+                                                <p class="text-title">Adventure</p>
+                                                <p class="text-body">Get an adrenaline rush</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page9.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img"
+                                                    src="/img/nature and wildelife.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">Nature And Wildlife</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page10.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/art.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">Art</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="dropcard"><a href="page11.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/food.jpeg" alt=""></div>
+                                            <div class="card-info">
+                                                <p class="text-title">Food & Cuisine</p>
+                                                <p class="text-body">The flavours of India
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navli dropdown"><a href="javascript:void(0)" class="dropbtn">Travel</a>
+                    <div class="dropdown-content">
+                        <div>
+                            <div class="dropcard"><a href="page12.html">
+                                    <div class="card">
+                                        <div><img width="162px" class="card-img" src="/img/1.jpeg" alt=""></div>
+                                        <div class="card-info">
+                                            <p class="text-title">About India</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="dropcard"><a href="page13.html">
+                                        <div class="card">
+                                            <div><img width="162px" class="card-img" src="/img/weather.jpeg" alt="">
+                                            </div>
+                                            <div class="card-info">
+                                                <p class="text-title">Weather</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="navli dropdown"><a href="javascript:void(0)" class="dropbtn">Contact us</a>
+                    <div class="dropdown-content">
+                        <div>
+                            <div class="dropcard"><a href="page14.html">
+                                    <div class="card">
+                                        <div><img width="162px" class="card-img" src="/img/contact.jpg" alt=""></div>
+                                        <div class="card-info">
+                                            <p class="text-title">Contact Us</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <img width="100%" src="/img/5.jpeg" alt="">
+    </div>
+</body>
+
+</html>
